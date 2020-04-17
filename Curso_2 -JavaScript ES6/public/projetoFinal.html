@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Buscando Repositórios</title>
+	
+	<style>
+		ul {
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		
+		li {
+			margin-top: 20px;
+			clear: both;
+		}
+		
+		img {
+			width: 80px;
+			float: left;
+			margin-right: 10px;
+		}
+		
+		a {
+			color: black;
+			font-weight: bolder;
+		}
+		
+		h1 {
+			font-size: 14pt;
+			margin: 0px;
+			padding-top: 3px;
+		}
+		
+		p {
+			margin: 5px 0;
+		}
+		
+		span#loading {
+			font-size: 20pt;
+			font-weight: bolder;
+		}
+	</style>
+</head>
+
+<body>
+	<form id="repoForm">
+		<input type="text" id="txtRepository">
+		<button type="submit">Adicionar</button>
+	</form>
+	
+	<ul id="repoList"></ul>
+	
+	<script src="./bundle.js"></script>
+</body>
+
+</html>

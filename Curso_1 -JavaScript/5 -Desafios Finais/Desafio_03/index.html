@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript</title>
+	
+	<style>
+		body,
+		input,
+		button {
+			font-size: 14pt;
+		}
+		
+		div {
+			width: 280px;
+			height: 330px;
+			text-align: center;
+			background-color: #eeeeee;
+			padding-bottom: 9px;
+			opacity: 0;
+		}
+		
+		p {
+			font-size: 18pt;
+			font-weight: bolder;
+			padding-top: 5px;
+		}
+		
+		img {
+			width: 250px;
+			margin-top: -15px;
+		}
+		
+		ol {
+			margin-top: -350px;
+			margin-left: 290px;
+			background-color: #eeeeee;
+			width: 400px;
+		}
+		
+		li {
+			margin: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	Digite um nome de usuário do GitHub: <input type="text" id="txtName">
+	<button onclick="searchName()">Buscar Repositórios</button>
+	
+	<section>
+		<div>
+			<p></p>
+			<img src="">
+		</div>
+		<ol></ol>
+	</section>
+	
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
