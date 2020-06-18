@@ -10,18 +10,18 @@ function renderTodos()
 	
 	for (let todo of todos)
 	{
-		let delTodo = document.createElement('a')
+		let linkTodo = document.createElement('a')
 		let liTodo = document.createElement('li')
 		let posicao = todos.indexOf(todo)
 		
-		delTodo.style.margin = '5px'
-		delTodo.href = '#'
-		delTodo.innerText = 'Excluir'
-		delTodo.setAttribute('onclick', 'deleteTodo(' + posicao + ')')
+		linkTodo.style.margin = '5px'
+		linkTodo.href = '#'
+		linkTodo.innerText = 'Excluir'
+		linkTodo.setAttribute('onclick', 'deleteTodo(' + posicao + ')')
 		
 		liTodo.innerText = todo
 		listTodos.appendChild(liTodo)
-		liTodo.appendChild(delTodo)
+		liTodo.appendChild(linkTodo)
 	}
 }
 
