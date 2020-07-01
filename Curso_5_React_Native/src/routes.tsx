@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
 import Home from './pages/Home'
-import Details from './pages/Details'
+import Product from './pages/Product'
 
 const AppStack = createStackNavigator()
 
@@ -11,16 +11,13 @@ const Routes = () => {
     return (
         <NavigationContainer>
             <AppStack.Navigator screenOptions={{
-                headerStyle: { backgroundColor: '#d9040f' },
-                headerTitleStyle: { fontWeight: 'bold', fontSize: 24 }
+                headerStyle: { backgroundColor: '#da552f' },
+                headerTitleStyle: { fontWeight: 'bold', fontSize: 24 },
+                headerTintColor: '#fff',
+                headerTitleAlign: 'center'
             }}>
-                <AppStack.Screen name="Home" component={Home}
-                    options={{
-                        headerTintColor: '#fff',
-                        headerTitle: 'JSHunt',
-                        headerTitleAlign: 'center'
-                    }} />
-                <AppStack.Screen name="Details" component={Details} />
+                <AppStack.Screen name="Home" component={Home} options={{ headerTitle: 'JSHunt' }} />
+                <AppStack.Screen name="Product" component={Product} />
             </AppStack.Navigator>
         </NavigationContainer>
     )
