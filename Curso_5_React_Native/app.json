@@ -1,28 +1,39 @@
 {
-  "expo": {
-    "name": "Curso_5_React_Native",
-    "slug": "Curso_5_React_Native",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    }
-  }
+	"expo":
+	{
+		"name": "Primeiro Aplicativo Mobile",
+		"slug": "Curso_5_React_Native",
+		"platforms": [
+			"android"
+		],
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash":
+		{
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#232324"
+		},
+		"updates":
+		{
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": [
+			"**/*"
+		],
+		"ios":
+		{
+			"supportsTablet": true
+		},
+		"android":
+		{
+			"package": "com.iantorquato.primeiroapk",
+			"adaptiveIcon":
+			{
+				"foregroundImage": "./assets/icon.png",
+				"backgroundColor": "#232324"
+			}
+		}
+	}
 }
